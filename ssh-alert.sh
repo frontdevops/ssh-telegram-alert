@@ -19,7 +19,7 @@ function ssh_alert_on_auth()
     local DATETIME="$(date "+%Y-%m-%d %H:%M:%S")"
 
     local MESSAGE=$(cat <<TEXT
-*${PAM_USER}* loged on *${HOSTNAME}*
+*${PAM_USER}* logged on *${HOSTNAME}*
 at ${DATETIME}
 Host: ${PAM_RHOST}
 Service: ${PAM_SERVICE}
